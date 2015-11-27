@@ -1,32 +1,243 @@
-<!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>Tadius.github.io</title>
-  <meta name="description" content="">
+    <title>Portfolio Item - Start Bootstrap Template</title>
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom CSS -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+	<link href="bootstrap-3.3.2/css/bootstrap.min.css" rel="stylesheet"> 
+	<link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <header>
-      <h1 class="title">My personal page</h1>
+
+    <!-- Page Content -->
+    <div class="container">
+<header style="padding-top:5px;">
+        <div id="logo" style="float:left">
+          <img src="images/logo.png">
+		  <h4 style="float:right;"><b><span style="color:#D9534F;">КУБ</span>КВАРТИРА.РУ</b><br />
+		  <small>Квартиры посуточно Краснодар</small>
+		  </h4>
+        </div>
+        <div id="contacts" style="float:right;">
+		  <h4 style="float:right;">+7-918-234-20-02<br />
+		  <small>info@business.ru </small>
+		  </h4>
+
+        </div>
+        <div class="clearfix"></div>
     </header>
-    <div id="container">
-    <p>Hello, World!</p>
+	
+	<nav class="navbar navbar-default " role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-menu">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Главная</a></li>
+          <li><a href="#main">Наши квартиры</a></li>
+		  <li><a href="#about">О нас</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a  href="#" style="padding-top:8px; padding-bottom:8px;">
+            <span class="btn btn-danger"><strong>Забронировать</strong></span></a>
+          </li>
+        </ul>
+      </div>
+    </nav> 
+
+    <div id="header-bottom" style="position:relative;">
+      <img src="images/banner.jpg" style="width:100%;">
+      <div id="bannertext" style="position:absolute; top:10%; width:100%; text-align:center; color:white;">
+        <div class="hidden-xs">
+          <h1>Мы предлагаем<br />
+            <small style="color: white;">снять квартиру посуточно без посредников<br />в Краснодаре</small>
+          </h1>
+        </div>
+        <div class="hidden-sm hidden-md hidden-lg">
+          <p class="lead">Мы предлагаем снять квартиру посуточно без посредников в Краснодаре</p>
+        </div>
+        <a class="btn btn-danger btn-lg">Забронировать</a>
+      </div>
+    </div>   
+	
+        <!-- Page Heading -->
+        <div id="main" class="row" style="text-align:center;">
+            <div class="col-lg-12">
+                <h2 class="page-header">Наши квартиры<br />
+                    <small>Краткосрочная аренда квартир — идеальное решение для туристов и командированных. Здесь можно снять квартиру на сутки, на ночь или на часы в Краснодаре без посредников!</small>
+                </h2>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Project One -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="photo.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>1-комнатная, 34 м2, 3/5 эт в Хабаровске</h3>
+                <p>Расчетный час 12:00. заселение с 13:00. Квартира предназначена для КОМФОРТНОГО размещения 2 человек.КОМАНДИРОВАННЫМ ВЫДАЕМ ОТЧЁТНЫЕ ДОКУМЕНТЫ.</p>
+				<div class="btn btn-success">1500 р.</div>
+                <a class="btn btn-info" href="#">Подробнее <span class="glyphicon glyphicon-chevron-right"></span></a>
+				
+			</div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Two -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="photo.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Project Two</h3>
+                <h4>Subheading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Three -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Project Three</h3>
+                <h4>Subheading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Four -->
+        <div class="row">
+
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Project Four</h3>
+                <h4>Subheading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
+                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Five -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Project Five</h3>
+                <h4>Subheading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
+                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
     </div>
-  
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
