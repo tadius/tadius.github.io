@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности - Сравни Цену</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #4a6fa5, #2e4a7a);
+            color: white;
+            padding: 40px 0 30px;
+            text-align: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo-icon {
+            background-color: white;
+            color: #4a6fa5;
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-right: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .logo-text h1 {
+            font-size: 2.2rem;
+            text-align: left;
+        }
+        
+        .logo-text p {
+            font-size: 1rem;
+            opacity: 0.9;
+            text-align: left;
+        }
+        
+        .last-updated {
+            background-color: rgba(255,255,255,0.15);
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        
+        .policy-content {
+            background-color: white;
+            border-radius: 15px;
+            padding: 50px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 40px 0 60px;
+        }
+        
+        .intro {
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .intro p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+        
+        .policy-section {
+            margin-bottom: 40px;
+        }
+        
+        .policy-section h2 {
+            color: #2e4a7a;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f4f9;
+        }
+        
+        .policy-section h3 {
+            color: #4a6fa5;
+            margin: 25px 0 15px;
+            font-size: 1.3rem;
+        }
+        
+        .policy-section p {
+            margin-bottom: 15px;
+        }
+        
+        .policy-section ul, .policy-section ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .policy-section li {
+            margin-bottom: 10px;
+        }
+        
+        .highlight {
+            color: #2e4a7a;
+            font-weight: 600;
+        }
+        
+        .service-card {
+            background-color: #f8fafc;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-left: 4px solid #4a6fa5;
+        }
+        
+        .service-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .service-icon {
+            background-color: #e6eff9;
+            color: #4a6fa5;
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            margin-right: 15px;
+        }
+        
+        .service-header h4 {
+            color: #2e4a7a;
+            font-size: 1.2rem;
+        }
+        
+        .service-card p {
+            margin-bottom: 10px;
+        }
+        
+        .service-link {
+            display: inline-block;
+            color: #4a6fa5;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: color 0.3s ease;
+        }
+        
+        .service-link:hover {
+            color: #2e4a7a;
+            text-decoration: underline;
+        }
+        
+        .contact {
+            background-color: #f0f4f9;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .contact h3 {
+            color: #2e4a7a;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .email {
+            display: inline-block;
+            background-color: white;
+            padding: 12px 30px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            color: #2e4a7a;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .email:hover {
+            background-color: #4a6fa5;
+            color: white;
+        }
+        
+        footer {
+            background-color: #2e4a7a;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        footer p {
+            opacity: 0.8;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .back-to-app {
+            display: inline-block;
+            background-color: white;
+            color: #4a6fa5;
+            padding: 10px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-to-app:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .logo-text h1, .logo-text p {
+                text-align: center;
+            }
+            
+            .policy-content {
+                padding: 30px;
+            }
+            
+            .service-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .service-icon {
+                margin-bottom: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .policy-content {
+                padding: 20px;
+            }
+            
+            .service-card {
+                padding: 20px;
+            }
+            
+            .contact {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Сравни Цену</h1>
+                    <p>Политика конфиденциальности</p>
+                </div>
+            </div>
+            
+            <div class="last-updated">
+                <i class="far fa-calendar-alt"></i> Последнее обновление: 1 ноября 2023
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="policy-content">
+            <div class="intro">
+                <p>Настоящая Политика конфиденциальности объясняет, как приложение "Сравни Цену" ("Приложение", "мы", "наш" или "нас") собирает, использует и защищает вашу информацию.</p>
+                <p>Используя Приложение, вы соглашаетесь со сбором и использованием информации в соответствии с настоящей Политикой конфиденциальности.</p>
+            </div>
+            
+            <div class="policy-section">
+                <h2>1. Информация, которую мы собираем</h2>
+                <p>Мы не требуем от пользователей создания учетной записи и не собираем личную информацию, такую как имя, адрес или номер телефона.</p>
+                <p>Однако некоторая информация может собираться автоматически через сторонние сервисы, используемые в Приложении.</p>
+                
+                <h3>Автоматически собираемая информация может включать:</h3>
+                <ul>
+                    <li>Тип и модель устройства</li>
+                    <li>Версия операционной системы</li>
+                    <li>Версия приложения</li>
+                    <li>Страна и язык</li>
+                    <li>Анонимные данные об использовании (просмотренные экраны, выполненные действия)</li>
+                    <li>Рекламные идентификаторы (где это разрешено законом)</li>
+                </ul>
+            </div>
+            
+            <div class="policy-section">
+                <h2>2. Сторонние сервисы</h2>
+                <p>Приложение использует следующие сторонние сервисы:</p>
+                
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4>Аналитика — AppMetrica</h4>
+                    </div>
+                    <p>Мы используем AppMetrica для анализа взаимодействия пользователей с Приложением. Это помогает нам понимать модели использования и улучшать функциональность.</p>
+                    <p><span class="highlight">AppMetrica может собирать:</span></p>
+                    <ul>
+                        <li>Анонимную статистику использования</li>
+                        <li>Информацию об устройстве и технические данные</li>
+                    </ul>
+                    <a href="https://yandex.com/legal/appmetrica_privacy/" class="service-link" target="_blank">Подробнее: https://yandex.com/legal/appmetrica_privacy/</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-ad"></i>
+                        </div>
+                        <h4>Реклама — Yandex Ads</h4>
+                    </div>
+                    <p>Приложение отображает рекламу, предоставляемую Yandex Ads.</p>
+                    <p><span class="highlight">Yandex Ads может собирать:</span></p>
+                    <ul>
+                        <li>Рекламные идентификаторы</li>
+                        <li>Приблизительное местоположение (страна/регион)</li>
+                        <li>Информацию об устройстве</li>
+                    </ul>
+                    <p>Эти данные используются для показа релевантной рекламы и измерения эффективности рекламы.</p>
+                    <a href="https://yandex.com/legal/confidential/" class="service-link" target="_blank">Подробнее: https://yandex.com/legal/confidential/</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h4>Покупки в приложении — Apple</h4>
+                    </div>
+                    <p>Все покупки в приложении безопасно обрабатываются через систему покупок Apple In-App Purchase.</p>
+                    <p><span class="highlight">Мы не собираем и не храним:</span></p>
+                    <ul>
+                        <li>Данные платежных карт</li>
+                        <li>Платежную информацию</li>
+                    </ul>
+                    <p>Apple может обрабатывать данные, связанные с покупками, в соответствии со своей собственной политикой конфиденциальности.</p>
+                    <a href="https://www.apple.com/legal/privacy/" class="service-link" target="_blank">Подробнее: https://www.apple.com/legal/privacy/</a>
+                </div>
+            </div>
+            
+            <div class="policy-section">
+                <h2>3. Как мы используем информацию</h2>
+                <p>Собранная информация используется для:</p>
+                <ul>
+                    <li>Улучшения производительности и стабильности приложения</li>
+                    <li>Анализа использования и устранения проблем</li>
+                    <li>Показа рекламы</li>
+                    <li>Обработки покупок в приложении</li>
+                </ul>
+                <p>Мы не продаем и не передаем ваши личные данные третьим лицам в маркетинговых целях.</p>
+            </div>
+            
+            <div class="policy-section">
+                <h2>4. Безопасность данных</h2>
+                <p>Мы принимаем разумные меры для защиты вашей информации. Однако ни один метод передачи или хранения данных не является на 100% безопасным.</p>
+            </div>
+            
+            <div class="policy-section">
+                <h2>5. Конфиденциальность детей</h2>
+                <p>Приложение не предназначено для детей младше 13 лет.</p>
+                <p>Мы сознательно не собираем личные данные от детей. Если вы считаете, что ребенок предоставил личную информацию, пожалуйста, свяжитесь с нами.</p>
+            </div>
+            
+            <div class="policy-section">
+                <h2>6. Ваши права на конфиденциальность</h2>
+                <p>В зависимости от вашего местоположения, вы можете иметь права, связанные с вашими данными, включая:</p>
+                <ul>
+                    <li>Доступ к собранным данным</li>
+                    <li>Запрос на удаление данных</li>
+                    <li>Ограничение обработки данных</li>
+                </ul>
+                <p>Вы можете управлять персонализацией рекламы через настройки вашего устройства.</p>
+            </div>
+            
+            <div class="policy-section">
+                <h2>7. Изменения в политике</h2>
+                <p>Мы можем время от времени обновлять эту Политику конфиденциальности. Любые изменения будут опубликованы на этой странице с указанием обновленной даты.</p>
+                <p>Рекомендуем периодически просматривать эту политику.</p>
+            </div>
+            
+            <div class="contact">
+                <h3>8. Свяжитесь с нами</h3>
+                <p>Если у вас есть какие-либо вопросы относительно этой Политики конфиденциальности, пожалуйста, свяжитесь с нами:</p>
+                <a href="mailto:tadius@yandex.ru" class="email">tadius@yandex.ru</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Сравни Цену</h1>
+                    <p>Калькулятор выгоды и честной цены товаров</p>
+                </div>
+            </div>
+            <p>© 2023 Приложение "Сравни Цену". Все права защищены.</p>
+            <a href="index.html" class="back-to-app">
+                <i class="fas fa-arrow-left"></i> Вернуться к приложению
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Простая анимация для карточек сервисов
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceCards = document.querySelectorAll('.service-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            serviceCards.forEach(card => {
+                card.style.opacity = 0;
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+            
+            // Обновляем дату последнего обновления
+            const updateDateElement = document.querySelector('.last-updated');
+            const currentDate = new Date();
+            const formattedDate = currentDate.toLocaleDateString('ru-RU', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            });
+            updateDateElement.innerHTML = `<i class="far fa-calendar-alt"></i> Последнее обновление: ${formattedDate}`;
+        });
+    </script>
+</body>
+</html>
