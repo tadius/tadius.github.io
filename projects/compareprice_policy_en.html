@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Compare Price</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #4a6fa5, #2e4a7a);
+            color: white;
+            padding: 40px 0 30px;
+            text-align: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo-icon {
+            background-color: white;
+            color: #4a6fa5;
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-right: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .logo-text h1 {
+            font-size: 2.2rem;
+            text-align: left;
+        }
+        
+        .logo-text p {
+            font-size: 1rem;
+            opacity: 0.9;
+            text-align: left;
+        }
+        
+        .last-updated {
+            background-color: rgba(255,255,255,0.15);
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        
+        .policy-content {
+            background-color: white;
+            border-radius: 15px;
+            padding: 50px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 40px 0 60px;
+        }
+        
+        .intro {
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .intro p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+        
+        .policy-section {
+            margin-bottom: 40px;
+        }
+        
+        .policy-section h2 {
+            color: #2e4a7a;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f4f9;
+        }
+        
+        .policy-section h3 {
+            color: #4a6fa5;
+            margin: 25px 0 15px;
+            font-size: 1.3rem;
+        }
+        
+        .policy-section p {
+            margin-bottom: 15px;
+        }
+        
+        .policy-section ul, .policy-section ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .policy-section li {
+            margin-bottom: 10px;
+        }
+        
+        .highlight {
+            color: #2e4a7a;
+            font-weight: 600;
+        }
+        
+        .service-card {
+            background-color: #f8fafc;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-left: 4px solid #4a6fa5;
+        }
+        
+        .service-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .service-icon {
+            background-color: #e6eff9;
+            color: #4a6fa5;
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            margin-right: 15px;
+        }
+        
+        .service-header h4 {
+            color: #2e4a7a;
+            font-size: 1.2rem;
+        }
+        
+        .service-card p {
+            margin-bottom: 10px;
+        }
+        
+        .service-link {
+            display: inline-block;
+            color: #4a6fa5;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: color 0.3s ease;
+        }
+        
+        .service-link:hover {
+            color: #2e4a7a;
+            text-decoration: underline;
+        }
+        
+        .contact {
+            background-color: #f0f4f9;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .contact h3 {
+            color: #2e4a7a;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .email {
+            display: inline-block;
+            background-color: white;
+            padding: 12px 30px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            color: #2e4a7a;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .email:hover {
+            background-color: #4a6fa5;
+            color: white;
+        }
+        
+        footer {
+            background-color: #2e4a7a;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        footer p {
+            opacity: 0.8;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .back-to-app {
+            display: inline-block;
+            background-color: white;
+            color: #4a6fa5;
+            padding: 10px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-to-app:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .logo-text h1, .logo-text p {
+                text-align: center;
+            }
+            
+            .policy-content {
+                padding: 30px;
+            }
+            
+            .service-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .service-icon {
+                margin-bottom: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .policy-content {
+                padding: 20px;
+            }
+            
+            .service-card {
+                padding: 20px;
+            }
+            
+            .contact {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Compare Price</h1>
+                    <p>Privacy Policy</p>
+                </div>
+            </div>
+            
+            <div class="last-updated">
+                <i class="far fa-calendar-alt"></i> Last updated: November 1, 2023
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="policy-content">
+            <div class="intro">
+                <p>This Privacy Policy explains how Compare Price ("the App", "we", "our", or "us") collects, uses, and protects your information.</p>
+                <p>By using the App, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+            </div>
+            
+            <div class="policy-section">
+                <h2>1. Information We Collect</h2>
+                <p>We do not require users to create an account and do not collect personal information such as name, address, or phone number.</p>
+                <p>However, some information may be collected automatically through third-party services used in the App.</p>
+                
+                <h3>Automatically collected information may include:</h3>
+                <ul>
+                    <li>Device type and model</li>
+                    <li>Operating system version</li>
+                    <li>App version</li>
+                    <li>Country and language</li>
+                    <li>Anonymous usage data (screens viewed, actions taken)</li>
+                    <li>Advertising identifiers (where permitted by law)</li>
+                </ul>
+            </div>
+            
+            <div class="policy-section">
+                <h2>2. Third-Party Services</h2>
+                <p>The App uses the following third-party services:</p>
+                
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4>Analytics — AppMetrica</h4>
+                    </div>
+                    <p>We use AppMetrica to analyze how users interact with the App. This helps us understand usage patterns and improve functionality.</p>
+                    <p><span class="highlight">AppMetrica may collect:</span></p>
+                    <ul>
+                        <li>Anonymous usage statistics</li>
+                        <li>Device and technical information</li>
+                    </ul>
+                    <a href="https://yandex.com/legal/appmetrica_privacy/" class="service-link" target="_blank">Learn more: https://yandex.com/legal/appmetrica_privacy/</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-ad"></i>
+                        </div>
+                        <h4>Advertising — Yandex Ads</h4>
+                    </div>
+                    <p>The App displays ads provided by Yandex Ads.</p>
+                    <p><span class="highlight">Yandex Ads may collect:</span></p>
+                    <ul>
+                        <li>Advertising identifiers</li>
+                        <li>Approximate location (country/region)</li>
+                        <li>Device information</li>
+                    </ul>
+                    <p>This data is used to show relevant ads and measure ad performance.</p>
+                    <a href="https://yandex.com/legal/confidential/" class="service-link" target="_blank">Learn more: https://yandex.com/legal/confidential/</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h4>In-App Purchases — Apple</h4>
+                    </div>
+                    <p>All in-app purchases are processed securely through Apple's In-App Purchase system.</p>
+                    <p><span class="highlight">We do not collect or store:</span></p>
+                    <ul>
+                        <li>Payment card details</li>
+                        <li>Billing information</li>
+                    </ul>
+                    <p>Apple may process purchase-related data according to its own privacy policy.</p>
+                    <a href="https://www.apple.com/legal/privacy/" class="service-link" target="_blank">Learn more: https://www.apple.com/legal/privacy/</a>
+                </div>
+            </div>
+            
+            <div class="policy-section">
+                <h2>3. How We Use Information</h2>
+                <p>Collected information is used to:</p>
+                <ul>
+                    <li>Improve app performance and stability</li>
+                    <li>Analyze usage and fix issues</li>
+                    <li>Display ads</li>
+                    <li>Process in-app purchases</li>
+                </ul>
+                <p>We do not sell or share your personal data with third parties for marketing purposes.</p>
+            </div>
+            
+            <div class="policy-section">
+                <h2>4. Data Security</h2>
+                <p>We take reasonable measures to protect your information. However, no method of data transmission or storage is 100% secure.</p>
+            </div>
+            
+            <div class="policy-section">
+                <h2>5. Children's Privacy</h2>
+                <p>The App is not intended for children under the age of 13.</p>
+                <p>We do not knowingly collect personal data from children. If you believe that a child has provided personal information, please contact us.</p>
+            </div>
+            
+            <div class="policy-section">
+                <h2>6. Your Privacy Rights</h2>
+                <p>Depending on your location, you may have rights related to your data, including:</p>
+                <ul>
+                    <li>Access to collected data</li>
+                    <li>Request deletion of data</li>
+                    <li>Restriction of data processing</li>
+                </ul>
+                <p>You can manage ad personalization through your device settings.</p>
+            </div>
+            
+            <div class="policy-section">
+                <h2>7. Changes to This Policy</h2>
+                <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated date.</p>
+                <p>We recommend reviewing this policy periodically.</p>
+            </div>
+            
+            <div class="contact">
+                <h3>8. Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                <a href="mailto:tadius@yandex.ru" class="email">tadius@yandex.ru</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Compare Price</h1>
+                    <p>Price Calculator & Savings App</p>
+                </div>
+            </div>
+            <p>© 2023 Compare Price App. All rights reserved.</p>
+            <a href="index.html" class="back-to-app">
+                <i class="fas fa-arrow-left"></i> Back to App
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for service cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceCards = document.querySelectorAll('.service-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            serviceCards.forEach(card => {
+                card.style.opacity = 0;
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+            
+            // Update the last updated date
+            const updateDateElement = document.querySelector('.last-updated');
+            const currentDate = new Date();
+            const formattedDate = currentDate.toLocaleDateString('en-US', {
+                month: 'long',
+                day: 'numeric',
+                year: 'numeric'
+            });
+            updateDateElement.innerHTML = `<i class="far fa-calendar-alt"></i> Last updated: ${formattedDate}`;
+        });
+    </script>
+</body>
+</html>
