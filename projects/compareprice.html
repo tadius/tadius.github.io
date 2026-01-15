@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сравни Цену - Калькулятор выгоды и честной цены товаров</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #4a6fa5, #2e4a7a);
+            color: white;
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo-icon {
+            background-color: white;
+            color: #4a6fa5;
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-right: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .logo-text h1 {
+            font-size: 2.8rem;
+            text-align: left;
+        }
+        
+        .logo-text p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            text-align: left;
+        }
+        
+        .tagline {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            font-weight: 300;
+        }
+        
+        .screenshots {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .screenshot {
+            width: 220px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .screenshot:hover {
+            transform: translateY(-10px);
+        }
+        
+        .screenshot img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .app-store-badges {
+            margin-top: 30px;
+        }
+        
+        .badge {
+            display: inline-block;
+            background-color: white;
+            color: #333;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-weight: 600;
+            margin: 0 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .badge:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-3px);
+        }
+        
+        .badge i {
+            margin-right: 8px;
+            color: #4a6fa5;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #2e4a7a;
+            font-size: 2.2rem;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .feature i {
+            font-size: 2.5rem;
+            color: #4a6fa5;
+            margin-bottom: 20px;
+        }
+        
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2e4a7a;
+        }
+        
+        .description {
+            background-color: white;
+            border-radius: 15px;
+            padding: 50px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+        }
+        
+        .description p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .highlight {
+            color: #2e4a7a;
+            font-weight: 600;
+        }
+        
+        .examples {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        
+        .example {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            width: 100%;
+            max-width: 350px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .example h4 {
+            color: #2e4a7a;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .contact {
+            text-align: center;
+            background-color: #f0f4f9;
+            padding: 60px 20px;
+            border-radius: 15px;
+            margin-top: 60px;
+        }
+        
+        .contact h3 {
+            color: #2e4a7a;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .email {
+            display: inline-block;
+            background-color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            color: #2e4a7a;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .email:hover {
+            background-color: #4a6fa5;
+            color: white;
+        }
+        
+        footer {
+            background-color: #2e4a7a;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 80px;
+        }
+        
+        footer p {
+            opacity: 0.8;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .logo-text h1, .logo-text p {
+                text-align: center;
+            }
+            
+            .screenshot {
+                width: 180px;
+            }
+            
+            .description {
+                padding: 30px;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .screenshot {
+                width: 160px;
+            }
+            
+            .badge {
+                display: block;
+                margin: 15px auto;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Сравни Цену</h1>
+                    <p>Калькулятор выгоды и честной цены товаров</p>
+                </div>
+            </div>
+            
+            <p class="tagline">Приложение для расчета честной стоимости продуктов и товаров</p>
+            
+            <div class="screenshots">
+                <div class="screenshot">
+                    <img src="https://via.placeholder.com/220x440/4a6fa5/ffffff?text=Скриншот+1" alt="Скриншот приложения 1">
+                </div>
+                <div class="screenshot">
+                    <img src="https://via.placeholder.com/220x440/2e4a7a/ffffff?text=Скриншот+2" alt="Скриншот приложения 2">
+                </div>
+                <div class="screenshot">
+                    <img src="https://via.placeholder.com/220x440/4a6fa5/ffffff?text=Скриншот+3" alt="Скриншот приложения 3">
+                </div>
+                <div class="screenshot">
+                    <img src="https://via.placeholder.com/220x440/2e4a7a/ffffff?text=Скриншот+4" alt="Скриншот приложения 4">
+                </div>
+            </div>
+            
+            <!-- <div class="app-store-badges">
+                <a href="#" class="badge">
+                    <i class="fab fa-apple"></i> App Store
+                </a>
+                <a href="#" class="badge">
+                    <i class="fab fa-google-play"></i> Google Play
+                </a>
+            </div> -->
+        </div>
+    </header>
+    
+    <main class="container">
+        <section>
+            <h2 class="section-title">О приложении</h2>
+            
+            <div class="description">
+                <p>Производители в наше время часто злоупотребляют нестандартными величинами объема и веса товаров, например, выпускают молоко в упаковках 930мл, 850мл, 1400мл, кофе в банках 95г, 75г, 140г, подгузники в пачках по 12шт, 23шт, 83шт и т.д. Из-за этого сложно понять, какая цена товара за 1 литр, 1 кг, 1 шт.</p>
+                
+                <p>Не всегда можно быстро посчитать реальную стоимость единицы в уме. Приложение <span class="highlight">"Сравни Цену"</span> заберет на себя эту задачу. Не дайте хитрым уловкам производителей обмануть себя.</p>
+                
+                <p>Выбирайте самые выгодные товары или те товары, которые вам подходят по соотношению цена/качество. С приложением <span class="highlight">"Сравни Цену"</span> вы сэкономите значительные суммы денег и сможете купить больше продуктов за те же деньги.</p>
+                
+                <p><span class="highlight">Честная цена - это то, что заслуживает каждый покупатель.</span> Рассчитать выгоду, узнать, что дешевле, найти реальную цену, сравнить стоимость - все это вы сможете сделать с помощью приложения <span class="highlight">"Сравни Цену"</span>.</p>
+            </div>
+            
+            <h2 class="section-title">Как это работает</h2>
+            
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Вводите данные товара</h3>
+                    <p>Просто введите цену и объем/вес/количество товара в приложении. Интерфейс интуитивно понятен и прост в использовании.</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Сравнивайте цены</h3>
+                    <p>Приложение мгновенно рассчитает стоимость за 1 литр, 1 кг или 1 штуку. Вы сразу увидите, какой товар выгоднее покупать.</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-piggy-bank"></i>
+                    <h3>Экономьте деньги</h3>
+                    <p>Делайте осознанный выбор и покупайте товары по честной цене. Экономьте на каждой покупке без потери качества.</p>
+                </div>
+            </div>
+            
+            <div class="examples">
+                <div class="example">
+                    <h4>Пример из приложения</h4>
+                    <p>Молоко: 119.0 ₽ за 1400 мл = <span class="highlight">85.0 ₽ за 1 литр</span></p>
+                    <p>Молоко: 85.0 ₽ за 900 мл = <span class="highlight">94.4 ₽ за 1 литр</span> (дороже на 9.4 ₽)</p>
+                </div>
+                
+                <div class="example">
+                    <h4>Пример из приложения</h4>
+                    <p>Товар: 850 ₽ за 1.4 кг = <span class="highlight">607.1 ₽ за 1 кг</span></p>
+                    <p>Товар: 320 ₽ за 420 г = <span class="highlight">761.9 ₽ за 1 кг</span> (дороже на 154.8 ₽)</p>
+                </div>
+            </div>
+            
+            <div class="contact">
+                <h3>По вопросам и предложениям</h3>
+                <p>Мы всегда рады обратной связи от пользователей</p>
+                <a href="mailto:tadius@yandex.ru" class="email">tadius@yandex.ru</a>
+                <p style="margin-top: 20px; font-size: 0.9rem;">В приложении есть покупки для расширения функционала</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Сравни Цену</h1>
+                    <p>Калькулятор выгоды и честной цены товаров</p>
+                </div>
+            </div>
+            <p>© 2023 Приложение "Сравни Цену". Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Простая анимация при скролле
+        document.addEventListener('DOMContentLoaded', function() {
+            const features = document.querySelectorAll('.feature');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            features.forEach(feature => {
+                feature.style.opacity = 0;
+                feature.style.transform = 'translateY(20px)';
+                feature.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(feature);
+            });
+            
+            // Имитация скриншотов приложения
+            const screenshots = document.querySelectorAll('.screenshot img');
+            const screenshotTexts = [
+                'Хотите покупать товары выгодно? Сравнивайте цены прямо в магазине!',
+                'Введите цену и объем товаров, чтобы понять, какой из них Вам больше подходит!',
+                'Сравни Цену: расчет стоимости за 1 кг',
+                'Сравни Цену: сравнение нескольких товаров'
+            ];
+            
+            screenshots.forEach((img, index) => {
+                img.alt = screenshotTexts[index];
+            });
+        });
+    </script>
+</body>
+</html>
