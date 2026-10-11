@@ -48,7 +48,7 @@
                 <!-- ===================== RU ===================== -->
                 <section id="ru" lang="ru">
                     <h1 class="mt-2">Политика конфиденциальности</h1>
-                    <p class="updated">Редакция от 9 октября 2026 г.</p>
+                    <p class="updated">Редакция от 11 октября 2026 г.</p>
 
                     <p>Настоящая политика описывает, какие данные обрабатываются при использовании мобильного приложения
                         «Моя зарплата» (MySalary) для Android (далее — «Приложение»). Разработчик Приложения —
@@ -58,12 +58,38 @@
                     <p>Выплаты, суммы, типы выплат, источники дохода, комментарии и настройки, которые вы вводите в
                         Приложение, хранятся <b>только в памяти вашего устройства</b>. Разработчик не получает к ним
                         доступа, не передаёт их на свои серверы и не передаёт третьим лицам.</p>
-                    <p>Если вы создаёте резервную копию, файл сохраняется туда, куда вы его выберете (на устройство или в
-                        облачное хранилище по вашему выбору). Разработчик к этому файлу доступа не имеет.</p>
+                    <p>Если вы создаёте резервную копию, файл сохраняется туда, куда вы его выберете: в папку на
+                        устройстве, в облачное хранилище по вашему выбору или на ваш Google Диск (см. раздел 2).
+                        Разработчик к этому файлу доступа не имеет.</p>
                     <p>Удалить данные можно в любой момент: удалив выплаты в Приложении, очистив данные Приложения в
                         настройках устройства или удалив Приложение.</p>
 
-                    <h3>2. Технические данные, которые собирают сторонние сервисы</h3>
+                    <h3>2. Резервные копии на Google Диске</h3>
+                    <p>По вашему желанию Приложение может автоматически сохранять резервные копии на ваш Google Диск.
+                        Эта функция выключена по умолчанию и включается только вами в разделе «Резервное копирование».</p>
+                    <ul>
+                        <li><b>Какой доступ запрашивается.</b> Приложение запрашивает только разрешение
+                            <code>drive.file</code> — доступ к файлам, которые создало само Приложение. Остальные файлы
+                            на вашем Google Диске Приложению не видны.</li>
+                        <li><b>Какие данные передаются.</b> На ваш Google Диск, в папку «MySalary Backups», загружается
+                            файл резервной копии с данными Приложения (выплаты, типы выплат, источники дохода,
+                            комментарии). Для отображения в настройках Приложение получает адрес электронной почты
+                            подключённого аккаунта Google.</li>
+                        <li><b>Как используются данные.</b> Файлы на Google Диске используются только для создания,
+                            удаления устаревших и восстановления резервных копий по вашему запросу. Адрес почты хранится
+                            только на устройстве. Данные передаются напрямую между вашим устройством и Google —
+                            Разработчик к ним доступа не имеет, не передаёт их третьим лицам и не использует для рекламы.</li>
+                        <li><b>Как отключить.</b> Выключите «Google Диск» в разделе «Резервное копирование» — доступ
+                            Приложения будет отозван. Также доступ можно отозвать на странице
+                            <a href="https://myaccount.google.com/permissions" target="_blank">myaccount.google.com/permissions</a>.
+                            Уже созданные копии остаются на вашем Google Диске, вы можете удалить их сами.</li>
+                    </ul>
+                    <p>Использование и передача Приложением информации, полученной через Google API, соответствуют
+                        <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Политике
+                        в отношении пользовательских данных Google API Services</a>, включая требования об ограниченном
+                        использовании (Limited Use).</p>
+
+                    <h3>3. Технические данные, которые собирают сторонние сервисы</h3>
                     <p>Для работы, улучшения и монетизации Приложения используются сервисы третьих лиц. Они могут
                         автоматически собирать обезличенные технические данные: модель устройства, версию ОС и
                         Приложения, язык и регион, IP-адрес и приблизительное местоположение, определённое по нему или по данным сети, рекламный идентификатор устройства, идентификатор установки,
@@ -82,10 +108,11 @@
                             <tr><td>Рекламная сеть Яндекса (Yandex Mobile Ads) и её партнёры по медиации</td><td>Показ рекламы</td><td><a href="https://yandex.ru/legal/confidential/" target="_blank">ссылка</a></td></tr>
                             <tr><td>RuStore (VK)</td><td>Оплата подписки и покупок, оценка приложения</td><td><a href="https://www.rustore.ru/help/legal/privacy" target="_blank">ссылка</a></td></tr>
                             <tr><td>Google Play (Billing, In-App Review)</td><td>Оплата подписки и покупок, оценка приложения</td><td><a href="https://policies.google.com/privacy" target="_blank">ссылка</a></td></tr>
+                            <tr><td>Google Диск (если вы его подключили)</td><td>Хранение ваших резервных копий (см. раздел 2)</td><td><a href="https://policies.google.com/privacy" target="_blank">ссылка</a></td></tr>
                         </tbody>
                     </table>
 
-                    <h3>3. Подписка и покупки</h3>
+                    <h3>4. Подписка и покупки</h3>
                     <p>Оплата подписки PRO и покупок в Приложении проходит через магазин приложений (RuStore или Google
                         Play) по его правилам. Данные вашей банковской карты и платёжные реквизиты обрабатывает только
                         магазин — <b>Приложение и Разработчик их не получают</b>.</p>
@@ -93,25 +120,25 @@
                         идентификатор продукта, идентификатор и статус покупки, срок действия подписки. Эти сведения
                         хранятся на устройстве и используются только для проверки доступа к PRO.</p>
 
-                    <h3>4. Реклама</h3>
+                    <h3>5. Реклама</h3>
                     <p>В бесплатной версии Приложения показывается реклама. Рекламные сервисы могут использовать рекламный
                         идентификатор устройства для подбора объявлений. Вы можете сбросить его или отключить
                         персонализацию рекламы в настройках Android (Настройки → Конфиденциальность → Реклама).
                         Пользователи PRO и купившие отключение рекламы рекламу не видят.</p>
 
-                    <h3>5. Дети</h3>
+                    <h3>6. Дети</h3>
                     <p>Приложение не предназначено для детей младше 13 лет. Разработчик сознательно не собирает данные
                         детей.</p>
 
-                    <h3>6. Безопасность</h3>
+                    <h3>7. Безопасность</h3>
                     <p>Разработчик принимает разумные меры для защиты данных, однако ни один способ передачи данных через
                         интернет или их хранения не обеспечивает абсолютной безопасности.</p>
 
-                    <h3>7. Изменения политики</h3>
+                    <h3>8. Изменения политики</h3>
                     <p>Политика может обновляться. Актуальная редакция всегда доступна на этой странице, дата редакции
                         указана в начале документа.</p>
 
-                    <h3>8. Контакты</h3>
+                    <h3>9. Контакты</h3>
                     <p>Вопросы о конфиденциальности: <a href="mailto:tadiuzzz@gmail.com">tadiuzzz@gmail.com</a></p>
                 </section>
 
@@ -120,7 +147,7 @@
                 <!-- ===================== EN ===================== -->
                 <section id="en" lang="en">
                     <h1>Privacy Policy</h1>
-                    <p class="updated">Last updated: October 9, 2026</p>
+                    <p class="updated">Last updated: October 11, 2026</p>
 
                     <p>This policy describes what data is processed when you use the MySalary ("Моя зарплата") mobile app
                         for Android (the "App"). The App is developed by Vitaly Simonov (the "Developer", "I").</p>
@@ -129,12 +156,36 @@
                     <p>Payments, amounts, payment types, income sources, comments and settings that you enter in the App
                         are stored <b>only on your device</b>. The Developer has no access to them, does not upload them
                         to any server and does not share them with third parties.</p>
-                    <p>If you create a backup, the file is saved wherever you choose (on the device or in a cloud storage
-                        of your choice). The Developer has no access to that file.</p>
+                    <p>If you create a backup, the file is saved wherever you choose: a folder on the device, a cloud
+                        storage of your choice or your Google Drive (see section 2). The Developer has no access to that
+                        file.</p>
                     <p>You can delete your data at any time by deleting payments in the App, clearing the App's data in
                         the device settings or uninstalling the App.</p>
 
-                    <h3>2. Technical data collected by third-party services</h3>
+                    <h3>2. Backups on Google Drive</h3>
+                    <p>If you choose to, the App can automatically save backups to your Google Drive. This feature is off
+                        by default and can be turned on only by you in the "Backup and restore" section.</p>
+                    <ul>
+                        <li><b>Access requested.</b> The App requests only the <code>drive.file</code> permission — access
+                            to files created by the App itself. Other files on your Google Drive are not visible to the
+                            App.</li>
+                        <li><b>Data transferred.</b> A backup file with the App data (payments, payment types, income
+                            sources, comments) is uploaded to the "MySalary Backups" folder on your Google Drive. To show
+                            it in the settings, the App receives the email address of the connected Google account.</li>
+                        <li><b>How the data is used.</b> Files on Google Drive are used only to create backups, delete
+                            outdated ones and restore a backup at your request. The email address is stored only on the
+                            device. Data is transferred directly between your device and Google — the Developer has no
+                            access to it, does not share it with third parties and does not use it for advertising.</li>
+                        <li><b>How to turn it off.</b> Turn off "Google Drive" in the "Backup and restore" section — the
+                            App's access will be revoked. You can also revoke access at
+                            <a href="https://myaccount.google.com/permissions" target="_blank">myaccount.google.com/permissions</a>.
+                            Backups already created stay on your Google Drive, and you can delete them yourself.</li>
+                    </ul>
+                    <p>The App's use and transfer of information received from Google APIs adheres to the
+                        <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API
+                        Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+                    <h3>3. Technical data collected by third-party services</h3>
                     <p>The App uses third-party services to operate, improve and monetize it. They may automatically
                         collect non-personal technical data: device model, OS and App version, language and region,
                         IP address and approximate location derived from it or from network data, the device advertising ID, installation ID, crash reports and App usage events (for
@@ -153,10 +204,11 @@
                             <tr><td>Yandex Mobile Ads and its mediation partners</td><td>Showing ads</td><td><a href="https://yandex.com/legal/confidential/" target="_blank">link</a></td></tr>
                             <tr><td>RuStore (VK)</td><td>Subscription and purchase payments, app rating</td><td><a href="https://www.rustore.ru/help/legal/privacy" target="_blank">link</a></td></tr>
                             <tr><td>Google Play (Billing, In-App Review)</td><td>Subscription and purchase payments, app rating</td><td><a href="https://policies.google.com/privacy" target="_blank">link</a></td></tr>
+                            <tr><td>Google Drive (if you connect it)</td><td>Storing your backups (see section 2)</td><td><a href="https://policies.google.com/privacy" target="_blank">link</a></td></tr>
                         </tbody>
                     </table>
 
-                    <h3>3. Subscription and purchases</h3>
+                    <h3>4. Subscription and purchases</h3>
                     <p>The PRO subscription and in-app purchases are paid through the app store (RuStore or Google Play)
                         under its rules. Your card details and payment information are processed only by the store —
                         <b>neither the App nor the Developer receives them</b>.</p>
@@ -164,24 +216,24 @@
                         purchase ID and status, and the subscription expiry date. This information is stored on the
                         device and used only to check access to PRO.</p>
 
-                    <h3>4. Advertising</h3>
+                    <h3>5. Advertising</h3>
                     <p>The free version of the App shows ads. Ad services may use the device advertising ID to select
                         ads. You can reset it or opt out of ad personalization in Android settings (Settings → Privacy →
                         Ads). PRO users and users who purchased ad removal do not see ads.</p>
 
-                    <h3>5. Children</h3>
+                    <h3>6. Children</h3>
                     <p>The App is not intended for children under 13. The Developer does not knowingly collect data from
                         children.</p>
 
-                    <h3>6. Security</h3>
+                    <h3>7. Security</h3>
                     <p>The Developer takes reasonable measures to protect data, but no method of transmission over the
                         internet or electronic storage is completely secure.</p>
 
-                    <h3>7. Changes to this policy</h3>
+                    <h3>8. Changes to this policy</h3>
                     <p>This policy may be updated. The current version is always available on this page; the date of the
                         last update is shown at the top.</p>
 
-                    <h3>8. Contact</h3>
+                    <h3>9. Contact</h3>
                     <p>Privacy questions: <a href="mailto:tadiuzzz@gmail.com">tadiuzzz@gmail.com</a></p>
                 </section>
             </div>
