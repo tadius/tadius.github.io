@@ -59,14 +59,20 @@
                         Приложение, хранятся <b>только в памяти вашего устройства</b>. Разработчик не получает к ним
                         доступа, не передаёт их на свои серверы и не передаёт третьим лицам.</p>
                     <p>Если вы создаёте резервную копию, файл сохраняется туда, куда вы его выберете: в папку на
-                        устройстве, в облачное хранилище по вашему выбору или на ваш Google Диск (см. раздел 2).
+                        устройстве, в облачное хранилище по вашему выбору, на ваш Google Диск или Яндекс Диск (см. раздел 2).
                         Разработчик к этому файлу доступа не имеет.</p>
                     <p>Удалить данные можно в любой момент: удалив выплаты в Приложении, очистив данные Приложения в
                         настройках устройства или удалив Приложение.</p>
 
-                    <h3>2. Резервные копии на Google Диске</h3>
-                    <p>По вашему желанию Приложение может автоматически сохранять резервные копии на ваш Google Диск.
-                        Эта функция выключена по умолчанию и включается только вами в разделе «Резервное копирование».</p>
+                    <h3>2. Резервные копии в облаке (Google Диск, Яндекс Диск)</h3>
+                    <p>По вашему желанию Приложение может автоматически сохранять резервные копии на ваш Google Диск
+                        и/или Яндекс Диск. Эти функции выключены по умолчанию и включаются только вами в разделе
+                        «Резервное копирование». В облако загружается файл резервной копии с данными Приложения
+                        (выплаты, типы выплат, источники дохода, комментарии). Данные передаются напрямую между вашим
+                        устройством и облачным сервисом — Разработчик к ним доступа не имеет, не передаёт их третьим
+                        лицам и не использует для рекламы.</p>
+
+                    <h5>Google Диск</h5>
                     <ul>
                         <li><b>Какой доступ запрашивается.</b> Приложение запрашивает только разрешение
                             <code>drive.file</code> — доступ к файлам, которые создало само Приложение. Остальные файлы
@@ -89,6 +95,23 @@
                         в отношении пользовательских данных Google API Services</a>, включая требования об ограниченном
                         использовании (Limited Use).</p>
 
+                    <h5>Яндекс Диск</h5>
+                    <ul>
+                        <li><b>Какой доступ запрашивается.</b> Вход выполняется через Яндекс ID. Приложение запрашивает
+                            только доступ к своей папке на Диске («Приложения/Моя зарплата») и к логину аккаунта.
+                            Остальные файлы на вашем Яндекс Диске Приложению не видны.</li>
+                        <li><b>Какие данные передаются.</b> В папку приложения на вашем Яндекс Диске загружается файл
+                            резервной копии. Для отображения в настройках Приложение получает логин подключённого
+                            аккаунта Яндекса.</li>
+                        <li><b>Как используются данные.</b> Файлы используются только для создания, удаления устаревших и
+                            восстановления резервных копий по вашему запросу. Токен доступа и логин хранятся только на
+                            устройстве, токен — в зашифрованном виде.</li>
+                        <li><b>Как отключить.</b> Выключите «Яндекс Диск» в разделе «Резервное копирование» — Приложение
+                            удалит токен доступа с устройства. Полностью отозвать доступ можно в настройках Яндекс ID:
+                            <a href="https://id.yandex.ru/security" target="_blank">id.yandex.ru/security</a>.
+                            Уже созданные копии остаются на вашем Яндекс Диске, вы можете удалить их сами.</li>
+                    </ul>
+
                     <h3>3. Технические данные, которые собирают сторонние сервисы</h3>
                     <p>Для работы, улучшения и монетизации Приложения используются сервисы третьих лиц. Они могут
                         автоматически собирать обезличенные технические данные: модель устройства, версию ОС и
@@ -109,6 +132,7 @@
                             <tr><td>RuStore (VK)</td><td>Оплата подписки и покупок, оценка приложения</td><td><a href="https://www.rustore.ru/help/legal/privacy" target="_blank">ссылка</a></td></tr>
                             <tr><td>Google Play (Billing, In-App Review)</td><td>Оплата подписки и покупок, оценка приложения</td><td><a href="https://policies.google.com/privacy" target="_blank">ссылка</a></td></tr>
                             <tr><td>Google Диск (если вы его подключили)</td><td>Хранение ваших резервных копий (см. раздел 2)</td><td><a href="https://policies.google.com/privacy" target="_blank">ссылка</a></td></tr>
+                            <tr><td>Яндекс Диск и Яндекс ID (если вы их подключили)</td><td>Хранение ваших резервных копий (см. раздел 2)</td><td><a href="https://yandex.ru/legal/confidential/" target="_blank">ссылка</a></td></tr>
                         </tbody>
                     </table>
 
@@ -157,14 +181,20 @@
                         are stored <b>only on your device</b>. The Developer has no access to them, does not upload them
                         to any server and does not share them with third parties.</p>
                     <p>If you create a backup, the file is saved wherever you choose: a folder on the device, a cloud
-                        storage of your choice or your Google Drive (see section 2). The Developer has no access to that
+                        storage of your choice, your Google Drive or Yandex Disk (see section 2). The Developer has no access to that
                         file.</p>
                     <p>You can delete your data at any time by deleting payments in the App, clearing the App's data in
                         the device settings or uninstalling the App.</p>
 
-                    <h3>2. Backups on Google Drive</h3>
-                    <p>If you choose to, the App can automatically save backups to your Google Drive. This feature is off
-                        by default and can be turned on only by you in the "Backup and restore" section.</p>
+                    <h3>2. Cloud backups (Google Drive, Yandex Disk)</h3>
+                    <p>If you choose to, the App can automatically save backups to your Google Drive and/or Yandex Disk.
+                        These features are off by default and can be turned on only by you in the "Backup and restore"
+                        section. A backup file with the App data (payments, payment types, income sources, comments) is
+                        uploaded to the cloud. Data is transferred directly between your device and the cloud service —
+                        the Developer has no access to it, does not share it with third parties and does not use it for
+                        advertising.</p>
+
+                    <h5>Google Drive</h5>
                     <ul>
                         <li><b>Access requested.</b> The App requests only the <code>drive.file</code> permission — access
                             to files created by the App itself. Other files on your Google Drive are not visible to the
@@ -184,6 +214,22 @@
                     <p>The App's use and transfer of information received from Google APIs adheres to the
                         <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API
                         Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+                    <h5>Yandex Disk</h5>
+                    <ul>
+                        <li><b>Access requested.</b> Sign-in is done with Yandex ID. The App requests access only to its
+                            own folder on Yandex Disk ("Applications/Моя зарплата") and to the account login. Other files on
+                            your Yandex Disk are not visible to the App.</li>
+                        <li><b>Data transferred.</b> A backup file is uploaded to the App folder on your Yandex Disk. To show
+                            it in the settings, the App receives the login of the connected Yandex account.</li>
+                        <li><b>How the data is used.</b> Files are used only to create backups, delete outdated ones and
+                            restore a backup at your request. The access token and the login are stored only on the
+                            device; the token is encrypted.</li>
+                        <li><b>How to turn it off.</b> Turn off "Yandex Disk" in the "Backup and restore" section — the App
+                            will delete the access token from the device. To fully revoke access, use the Yandex ID
+                            settings: <a href="https://id.yandex.ru/security" target="_blank">id.yandex.ru/security</a>.
+                            Backups already created stay on your Yandex Disk, and you can delete them yourself.</li>
+                    </ul>
 
                     <h3>3. Technical data collected by third-party services</h3>
                     <p>The App uses third-party services to operate, improve and monetize it. They may automatically
@@ -205,6 +251,7 @@
                             <tr><td>RuStore (VK)</td><td>Subscription and purchase payments, app rating</td><td><a href="https://www.rustore.ru/help/legal/privacy" target="_blank">link</a></td></tr>
                             <tr><td>Google Play (Billing, In-App Review)</td><td>Subscription and purchase payments, app rating</td><td><a href="https://policies.google.com/privacy" target="_blank">link</a></td></tr>
                             <tr><td>Google Drive (if you connect it)</td><td>Storing your backups (see section 2)</td><td><a href="https://policies.google.com/privacy" target="_blank">link</a></td></tr>
+                            <tr><td>Yandex Disk and Yandex ID (if you connect them)</td><td>Storing your backups (see section 2)</td><td><a href="https://yandex.com/legal/confidential/" target="_blank">link</a></td></tr>
                         </tbody>
                     </table>
 
