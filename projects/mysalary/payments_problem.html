@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Помощь с решением проблем оплаты в приложении Моя Зарплата" />
+    <meta name="description" content="Помощь с оформлением и восстановлением подписки в приложении Моя Зарплата" />
     <meta name="author" content="tadiuzzz" />
     <title>Помощь с оплатой - Приложение "Моя зарплата"</title>
     <!-- Favicon-->
@@ -18,6 +18,7 @@
             margin-bottom: 20px;
             border: 1px solid #e0e0e0;
             border-radius: 8px;
+            scroll-margin-top: 16px;
         }
         .card-header {
             background-color: #f8f9fa;
@@ -29,23 +30,15 @@
             border-radius: 8px;
             margin-bottom: 25px;
         }
-        .step-number {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            background-color: #0d6efd;
-            color: white;
-            text-align: center;
-            line-height: 30px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
         .note {
             background-color: #fff3cd;
             border-left: 4px solid #ffc107;
             padding: 15px;
             margin: 20px 0;
             border-radius: 4px;
+        }
+        .note p:last-child {
+            margin-bottom: 0;
         }
     </style>
 </head>
@@ -78,71 +71,110 @@
             <!-- Page content-->
             <div class="container-fluid">
                 <div class="help-section mt-4">
-                    <h2>Решение проблем с оплатой</h2>
-                    <p>Если у вас возникли трудности с оплатой или доступом к определенным функциям приложения, эта страница поможет вам найти возможные решения.</p>
+                    <h2>Помощь с оплатой и подпиской PRO</h2>
+                    <p>Здесь собраны ответы на частые вопросы: как оформить подписку, если оплата не проходит,
+                        и что делать, если подписка не восстановилась после смены телефона.</p>
+                    <p class="mb-0"><a href="#subscribe">Как оформить подписку</a> ·
+                        <a href="#restore">Подписка не восстанавливается</a> ·
+                        <a href="#transfer">Перенос данных</a> ·
+                        <a href="#en">English</a></p>
                 </div>
 
-                <div class="card">
-                    <div class="card-header">Проверка стандартных решений</div>
+                <div class="card" id="subscribe">
+                    <div class="card-header">Как оформить подписку, если оплата через Google Play не проходит</div>
                     <div class="card-body">
-                        <p>Прежде чем предпринимать другие действия, убедитесь, что вы проверили следующие моменты:</p>
-                        <ul>
-                            <li>Стабильное интернет-соединение</li>
-                            <li>Достаточный баланс на карте/счете</li>
-                            <li>Карта поддерживает международные платежи (если требуется)</li>
-                            <li>Обновленная версия приложения</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">Альтернативные варианты доступа</div>
-                    <div class="card-body">
-                        <p>Наше приложение может быть доступно в различных официальных магазинах приложений. Вы можете ознакомиться со всеми официальными вариантами распространения нашего приложения.</p>
-                        
-                        <div class="note">
-                            <p>Обратите внимание: разные магазины приложений могут иметь различные условия и возможности оплаты.</p>
-                        </div>
-                        
-                        <p>Для получения информации о доступности приложения в других официальных магазинах, вы можете:</p>
-                        
+                        <p>Пользователи из России могут оформить подписку через RuStore прямо в текущей версии
+                            приложения — переустанавливать приложение и переносить данные не нужно.</p>
                         <ol>
-                            <li> Посетить страницу разработчика в различных магазинах приложений</li>
-                            <li> Ознакомиться с доступными вариантами оплаты на соответствующих платформах</li>
+                            <li>Установите приложение RuStore из официального источника.</li>
+                            <li>Откройте RuStore и войдите в свой аккаунт.</li>
+                            <li>Обновите «Мою зарплату» до версии 2.2.0 или новее.</li>
+                            <li>Откройте «Мою зарплату», нажмите на корону вверху экрана и выберите план — оплата пройдёт через RuStore.</li>
                         </ol>
-                        
-                        <p>Наша страница разработчика в одном из магазинов приложений: <a href="https://www.rustore.ru/catalog/developer/08e3241b">https://www.rustore.ru/catalog/developer/08e3241b</a></p>
+                        <div class="note">
+                            <p>Если кнопка оплаты не появилась, убедитесь, что вы вошли в аккаунт RuStore,
+                                и нажмите «Попробовать снова» в окне подписки.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="card-header">Перенос данных между версиями</div>
+                <div class="card" id="restore">
+                    <div class="card-header">Подписка не восстанавливается (новый телефон или переустановка)</div>
                     <div class="card-body">
-                        <p>Если вы решите использовать другую версию приложения, вы можете перенести свои данные следующим образом:</p>
-                        
+                        <p>Приложение распространяется в двух вариантах — из Google Play и из RuStore. Это разные
+                            приложения, и подписка действует только в том варианте, в котором вы её оформили.
+                            Подписку, оформленную в одном варианте, нельзя перенести в другой.</p>
+                        <p><b>Если вы оформляли подписку в одном варианте приложения — продолжайте пользоваться
+                            именно им.</b> На новом телефоне:</p>
+                        <ol>
+                            <li>Установите тот же вариант приложения, из того же магазина, что и раньше.</li>
+                            <li>Войдите в тот же аккаунт магазина, через который оплачивали подписку
+                                (аккаунт Google или аккаунт RuStore).</li>
+                            <li>Если вы оплачивали через RuStore — установите RuStore и войдите в аккаунт.</li>
+                            <li>Откройте Настройки → «PRO и покупки» и нажмите «Восстановить покупки».</li>
+                        </ol>
+                        <div class="note">
+                            <p>Как узнать вариант приложения: Настройки → «О приложении». Рядом с номером версии
+                                указан магазин — «Google Play» или «RuStore».</p>
+                        </div>
+                        <p>Если вы уже установили другой вариант, перенесите данные в нужный вариант с помощью
+                            резервной копии (см. <a href="#transfer">ниже</a>), а лишний вариант удалите.</p>
+                        <p class="mb-0">Купленные до перехода на подписку функции (разовые покупки) тоже
+                            работают только в том варианте приложения, где они были куплены.</p>
+                    </div>
+                </div>
+
+                <div class="card" id="transfer">
+                    <div class="card-header">Перенос данных между телефонами и вариантами приложения</div>
+                    <div class="card-body">
                         <h5>Создание резервной копии:</h5>
                         <ol>
                             <li>Откройте приложение</li>
                             <li>Перейдите в Настройки → Резервное копирование</li>
-                            <li>Выберите "Создать резервную копию"</li>
-                            <li>Сохраните файл в удобное место на устройстве</li>
+                            <li>Выберите «Создать резервную копию» (или включите автобэкап в Google Диск / Яндекс Диск)</li>
+                            <li>Сохраните файл в удобное место</li>
                         </ol>
-                        
+
                         <h5>Восстановление данных:</h5>
-                        <ol>
-                            <li>Установите новую версию приложения</li>
-                            <li>При первом запуске выберите "Восстановить из резервной копии"</li>
-                            <li>Найдите ранее сохраненный файл резервной копии</li>
+                        <ol class="mb-0">
+                            <li>Установите приложение на новом телефоне</li>
+                            <li>Перейдите в Настройки → Резервное копирование</li>
+                            <li>Выберите «Восстановить из резервной копии» и найдите сохранённый файл</li>
                             <li>Подтвердите восстановление данных</li>
                         </ol>
                     </div>
                 </div>
 
                 <div class="card">
+                    <div class="card-header">Проверка стандартных решений</div>
+                    <div class="card-body">
+                        <ul class="mb-0">
+                            <li>Стабильное интернет-соединение (VPN на время оплаты и проверки подписки лучше отключить)</li>
+                            <li>Достаточный баланс на карте или счёте</li>
+                            <li>Обновлённая версия приложения</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card" id="en">
+                    <div class="card-header">English: subscription is not restored</div>
+                    <div class="card-body">
+                        <p>The app is distributed in two versions — from Google Play and from RuStore. They are
+                            separate apps, and a subscription works only in the version where it was bought.
+                            It cannot be moved to the other version.</p>
+                        <p><b>If you subscribed in one version, keep using that version.</b> On a new phone, install
+                            the same version from the same store, sign in to the same store account, then open
+                            Settings → “PRO and purchases” and tap “Restore purchases”.</p>
+                        <p class="mb-0">To check your version, open Settings → “About app”: the store name is shown next
+                            to the version number. Your data can be moved with a backup (Settings → “Backup and restore”).</p>
+                    </div>
+                </div>
+
+                <div class="card">
                     <div class="card-header">Нужна дополнительная помощь?</div>
                     <div class="card-body">
-                        <p>Если у вас остались вопросы или возникли проблемы, пожалуйста, свяжитесь с нашей службой поддержки:</p>
-                        <p>Email: <a href="mailto:tadiuzzz@gmail.com">tadiuzzz@gmail.com</a></p>
+                        <p>Если у вас остались вопросы, напишите мне:</p>
+                        <p class="mb-0">Email: <a href="mailto:tadiuzzz@gmail.com">tadiuzzz@gmail.com</a></p>
                     </div>
                 </div>
             </div>
