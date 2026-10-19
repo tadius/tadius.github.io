@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Ayuda para contratar y restaurar la suscripción en la app Mi salario" />
+    <meta name="author" content="tadiuzzz" />
+    <title>Ayuda con el pago - App "Mi salario"</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon_mysalary.ico" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../../../css/styles.css" rel="stylesheet" />
+    <link rel="alternate" hreflang="ru" href="https://tadius.github.io/projects/mysalary/payments_problem.html" />
+    <link rel="alternate" hreflang="es" href="https://tadius.github.io/projects/mysalary/es/payments_problem.html" />
+    <style>
+        .lang-switch { margin: 16px 0; }
+        .card {
+            margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            scroll-margin-top: 16px;
+        }
+        .card-header {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+        .help-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .note p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">
+                <img class="img-thumbnail" src="../img/my_salary.png" height="40" width="40" />
+                <span style="padding-left: 10px;">Mi salario</span>
+            </div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../../../index.html">Todos los proyectos</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="about_app.html">Acerca de la app</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="payments_problem.html"><b>Ayuda con el pago</b></a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="terms.html">Condiciones de la suscripción</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="privacy_policy.html">Política de privacidad</a>
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn navbar-toggler-icon" id="sidebarToggle"></button>
+                    <span class="navbar-brand mb-0 h1">Ayuda con el pago</span>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div class="container-fluid">
+                <div class="lang-switch"><a href="../payments_problem.html">Русский</a> · <a href="../payments_problem.html#en">English</a> · <b>Español</b></div>
+                <div class="help-section">
+                    <h2>Ayuda con el pago y la suscripción PRO</h2>
+                    <p>Aquí encontrarás respuestas a las preguntas más frecuentes: qué hacer si la suscripción no se
+                        restaura después de cambiar de teléfono y cómo pasar tus datos a otro dispositivo.</p>
+                    <p class="mb-0"><a href="#restore">La suscripción no se restaura</a> ·
+                        <a href="#transfer">Pasar los datos</a> ·
+                        <a href="#subscribe">Usuarios de Rusia</a></p>
+                </div>
+
+                <div class="card" id="restore">
+                    <div class="card-header">La suscripción no se restaura (teléfono nuevo o reinstalación)</div>
+                    <div class="card-body">
+                        <p>La app se distribuye en dos versiones: la de Google Play y la de RuStore. Son apps distintas,
+                            y la suscripción solo funciona en la versión en la que la contrataste. Una suscripción
+                            contratada en una versión no se puede pasar a la otra.</p>
+                        <p><b>Si te suscribiste en una versión de la app, sigue usando esa misma versión.</b> En el
+                            teléfono nuevo:</p>
+                        <ol>
+                            <li>Instala la misma versión de la app, desde la misma tienda que antes.</li>
+                            <li>Inicia sesión con la misma cuenta de la tienda con la que pagaste la suscripción
+                                (cuenta de Google o cuenta de RuStore).</li>
+                            <li>Abre Ajustes → «PRO y compras» y toca «Restaurar compras».</li>
+                        </ol>
+                        <div class="note">
+                            <p>Para saber qué versión tienes, abre Ajustes → «Acerca de la app». Junto al número de
+                                versión se indica la tienda: «Google Play» o «RuStore».</p>
+                        </div>
+                        <p>Si ya instalaste la otra versión, pasa tus datos a la versión correcta con una copia de
+                            seguridad (consulta <a href="#transfer">más abajo</a>) y desinstala la que sobra.</p>
+                        <p class="mb-0">Las funciones compradas antes de que existiera la suscripción (compras únicas)
+                            también funcionan solo en la versión de la app en la que se compraron.</p>
+                    </div>
+                </div>
+
+                <div class="card" id="transfer">
+                    <div class="card-header">Pasar los datos entre teléfonos y versiones de la app</div>
+                    <div class="card-body">
+                        <h5>Crear una copia de seguridad:</h5>
+                        <ol>
+                            <li>Abre la app</li>
+                            <li>Ve a Ajustes → Copia de seguridad</li>
+                            <li>Elige «Guardar en un archivo» (o activa la copia automática en Google Drive / Yandex Disk)</li>
+                            <li>Guarda el archivo en un lugar cómodo</li>
+                        </ol>
+
+                        <h5>Restaurar los datos:</h5>
+                        <ol class="mb-0">
+                            <li>Instala la app en el teléfono nuevo</li>
+                            <li>Ve a Ajustes → Copia de seguridad</li>
+                            <li>Elige «Restaurar desde un archivo» y busca el archivo guardado</li>
+                            <li>Confirma la restauración de los datos</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">Comprobaciones básicas</div>
+                    <div class="card-body">
+                        <ul class="mb-0">
+                            <li>Conexión a internet estable (mejor desactivar la VPN mientras pagas y se comprueba la suscripción)</li>
+                            <li>Saldo suficiente en la tarjeta o en la cuenta</li>
+                            <li>La app actualizada a la última versión</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card" id="subscribe">
+                    <div class="card-header">Usuarios de Rusia: cómo suscribirse si el pago con Google Play no funciona</div>
+                    <div class="card-body">
+                        <p>Los usuarios de Rusia pueden suscribirse a través de RuStore en la versión actual de la app,
+                            sin reinstalarla ni pasar los datos.</p>
+                        <ol>
+                            <li>Instala la app RuStore desde una fuente oficial.</li>
+                            <li>Abre RuStore e inicia sesión en tu cuenta.</li>
+                            <li>Actualiza «Mi salario» a la versión 2.2.0 o posterior.</li>
+                            <li>Abre «Mi salario», toca la corona en la parte superior de la pantalla y elige un plan: el pago se hará a través de RuStore.</li>
+                        </ol>
+                        <div class="note">
+                            <p>Si no aparece el botón de pago, comprueba que has iniciado sesión en RuStore y toca
+                                «Reintentar» en la ventana de suscripción.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">¿Necesitas más ayuda?</div>
+                    <div class="card-body">
+                        <p>Si te queda alguna duda, escríbeme:</p>
+                        <p class="mb-0">Correo: <a href="mailto:tadiuzzz@gmail.com">tadiuzzz@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../../../js/scripts.js"></script>
+</body>
+
+</html>
