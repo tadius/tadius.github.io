@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Pomoc w wykupieniu i przywróceniu subskrypcji w aplikacji Moja pensja" />
+    <meta name="author" content="tadiuzzz" />
+    <title>Pomoc z płatnością - Aplikacja „Moja pensja”</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon_mysalary.ico" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../../../css/styles.css" rel="stylesheet" />
+    <style>
+        .card {
+            margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            scroll-margin-top: 16px;
+        }
+        .card-header {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+        .help-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .note p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+    <link rel="alternate" hreflang="ru" href="https://tadius.github.io/projects/mysalary/payments_problem.html" />
+    <link rel="alternate" hreflang="es" href="https://tadius.github.io/projects/mysalary/es/payments_problem.html" />
+    <link rel="alternate" hreflang="de" href="https://tadius.github.io/projects/mysalary/de/payments_problem.html" />
+    <link rel="alternate" hreflang="pt" href="https://tadius.github.io/projects/mysalary/pt/payments_problem.html" />
+    <link rel="alternate" hreflang="fr" href="https://tadius.github.io/projects/mysalary/fr/payments_problem.html" />
+    <link rel="alternate" hreflang="it" href="https://tadius.github.io/projects/mysalary/it/payments_problem.html" />
+    <link rel="alternate" hreflang="pl" href="https://tadius.github.io/projects/mysalary/pl/payments_problem.html" />
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">
+                <img class="img-thumbnail" src="../img/my_salary.png" height="40" width="40" />
+                <span style="padding-left: 10px;">Moja pensja</span>
+            </div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../../../index.html">Wszystkie projekty</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="about_app.html">O aplikacji</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="payments_problem.html"><b>Pomoc z płatnością</b></a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="terms.html">Regulamin subskrypcji</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="privacy_policy.html">Polityka prywatności</a>
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn navbar-toggler-icon" id="sidebarToggle"></button>
+                    <span class="navbar-brand mb-0 h1">Pomoc z płatnością</span>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div class="container-fluid">
+                <div class="lang-switch" style="margin: 16px 0;"><a href="../payments_problem.html#ru">Русский</a> · <a href="../payments_problem.html#en">English</a> · <a href="../es/payments_problem.html">Español</a> · <a href="../de/payments_problem.html">Deutsch</a> · <a href="../pt/payments_problem.html">Português</a> · <a href="../fr/payments_problem.html">Français</a> · <a href="../it/payments_problem.html">Italiano</a> · <b>Polski</b></div>
+                <div class="help-section">
+                    <h2>Pomoc z płatnością i subskrypcją PRO</h2>
+                    <p>Tu znajdziesz odpowiedzi na częste pytania: co zrobić, gdy subskrypcja nie przywraca się po
+                        zmianie telefonu, i jak przenieść dane na inne urządzenie.</p>
+                    <p class="mb-0"><a href="#restore">Subskrypcja się nie przywraca</a> ·
+                        <a href="#transfer">Przeniesienie danych</a> ·
+                        <a href="#subscribe">Użytkownicy z Rosji</a></p>
+                </div>
+
+                <div class="card" id="restore">
+                    <div class="card-header">Subskrypcja się nie przywraca (nowy telefon lub ponowna instalacja)</div>
+                    <div class="card-body">
+                        <p>Aplikacja jest dostępna w dwóch wersjach – z Google Play i z RuStore. To osobne aplikacje,
+                            a subskrypcja działa tylko w tej wersji, w której została wykupiona. Subskrypcji z jednej
+                            wersji nie da się przenieść do drugiej.</p>
+                        <p><b>Jeśli subskrypcja została wykupiona w jednej wersji aplikacji, korzystaj dalej właśnie z
+                            niej.</b> Na nowym telefonie:</p>
+                        <ol>
+                            <li>Zainstaluj tę samą wersję aplikacji z tego samego sklepu co wcześniej.</li>
+                            <li>Zaloguj się na to samo konto w sklepie, z którego opłacono subskrypcję (konto Google lub
+                                konto RuStore).</li>
+                            <li>Otwórz Ustawienia → „PRO i zakupy” i dotknij „Przywróć zakupy”.</li>
+                        </ol>
+                        <div class="note">
+                            <p>Jak sprawdzić wersję: Ustawienia → „O aplikacji”. Obok numeru wersji widać sklep –
+                                „Google Play” lub „RuStore”.</p>
+                        </div>
+                        <p>Jeśli masz już zainstalowaną drugą wersję, przenieś dane do właściwej za pomocą kopii
+                            zapasowej (zobacz <a href="#transfer">niżej</a>), a zbędną wersję odinstaluj.</p>
+                        <p class="mb-0">Funkcje kupione przed wprowadzeniem subskrypcji (zakupy jednorazowe) również
+                            działają tylko w tej wersji aplikacji, w której zostały kupione.</p>
+                    </div>
+                </div>
+
+                <div class="card" id="transfer">
+                    <div class="card-header">Przenoszenie danych między telefonami i wersjami aplikacji</div>
+                    <div class="card-body">
+                        <h5>Tworzenie kopii zapasowej:</h5>
+                        <ol>
+                            <li>Otwórz aplikację</li>
+                            <li>Przejdź do Ustawienia → Kopia zapasowa</li>
+                            <li>Wybierz „Zapisz do pliku” (albo włącz automatyczną kopię na Dysku Google / Yandex Disk)</li>
+                            <li>Zapisz plik w wygodnym miejscu</li>
+                        </ol>
+
+                        <h5>Przywracanie danych:</h5>
+                        <ol class="mb-0">
+                            <li>Zainstaluj aplikację na nowym telefonie</li>
+                            <li>Przejdź do Ustawienia → Kopia zapasowa</li>
+                            <li>Wybierz „Przywróć z pliku” i wskaż zapisany plik</li>
+                            <li>Potwierdź przywrócenie danych</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">Podstawowe sprawdzenia</div>
+                    <div class="card-body">
+                        <ul class="mb-0">
+                            <li>Stabilne połączenie z internetem (na czas płatności i sprawdzania subskrypcji lepiej wyłączyć VPN)</li>
+                            <li>Wystarczające środki na karcie lub koncie</li>
+                            <li>Aktualna wersja aplikacji</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card" id="subscribe">
+                    <div class="card-header">Użytkownicy z Rosji: jak wykupić subskrypcję, gdy płatność przez Google Play nie przechodzi</div>
+                    <div class="card-body">
+                        <p>Użytkownicy z Rosji mogą wykupić subskrypcję przez RuStore bezpośrednio w obecnej wersji
+                            aplikacji – bez ponownej instalacji i przenoszenia danych.</p>
+                        <ol>
+                            <li>Zainstaluj aplikację RuStore z oficjalnego źródła.</li>
+                            <li>Otwórz RuStore i zaloguj się na swoje konto.</li>
+                            <li>Zaktualizuj „Moją pensję” do wersji 2.2.0 lub nowszej.</li>
+                            <li>Otwórz „Moją pensję”, dotknij korony u góry ekranu i wybierz plan – płatność przejdzie przez RuStore.</li>
+                        </ol>
+                        <div class="note">
+                            <p>Jeśli przycisk płatności się nie pojawił, sprawdź logowanie w RuStore i dotknij
+                                „Spróbuj ponownie” w oknie subskrypcji.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">Potrzebujesz więcej pomocy?</div>
+                    <div class="card-body">
+                        <p>Jeśli masz jeszcze pytania, napisz do mnie:</p>
+                        <p class="mb-0">E-mail: <a href="mailto:tadiuzzz@gmail.com">tadiuzzz@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../../../js/scripts.js"></script>
+</body>
+
+</html>
