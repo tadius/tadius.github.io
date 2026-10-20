@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Допомога з оформленням і відновленням підписки в застосунку Моя зарплата" />
+    <meta name="author" content="tadiuzzz" />
+    <title>Допомога з оплатою - Застосунок «Моя зарплата»</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon_mysalary.ico" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../../../css/styles.css" rel="stylesheet" />
+    <style>
+        .card {
+            margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            scroll-margin-top: 16px;
+        }
+        .card-header {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+        .help-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .note p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+    <link rel="alternate" hreflang="ru" href="https://tadius.github.io/projects/mysalary/payments_problem.html" />
+    <link rel="alternate" hreflang="es" href="https://tadius.github.io/projects/mysalary/es/payments_problem.html" />
+    <link rel="alternate" hreflang="de" href="https://tadius.github.io/projects/mysalary/de/payments_problem.html" />
+    <link rel="alternate" hreflang="pt" href="https://tadius.github.io/projects/mysalary/pt/payments_problem.html" />
+    <link rel="alternate" hreflang="fr" href="https://tadius.github.io/projects/mysalary/fr/payments_problem.html" />
+    <link rel="alternate" hreflang="it" href="https://tadius.github.io/projects/mysalary/it/payments_problem.html" />
+    <link rel="alternate" hreflang="pl" href="https://tadius.github.io/projects/mysalary/pl/payments_problem.html" />
+    <link rel="alternate" hreflang="tr" href="https://tadius.github.io/projects/mysalary/tr/payments_problem.html" />
+    <link rel="alternate" hreflang="kk" href="https://tadius.github.io/projects/mysalary/kk/payments_problem.html" />
+    <link rel="alternate" hreflang="uz" href="https://tadius.github.io/projects/mysalary/uz/payments_problem.html" />
+    <link rel="alternate" hreflang="uk" href="https://tadius.github.io/projects/mysalary/uk/payments_problem.html" />
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">
+                <img class="img-thumbnail" src="../img/my_salary.png" height="40" width="40" />
+                <span style="padding-left: 10px;">Моя зарплата</span>
+            </div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../../../index.html">Усі проєкти</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="about_app.html">Про застосунок</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="payments_problem.html"><b>Допомога з оплатою</b></a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="terms.html">Умови підписки</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="privacy_policy.html">Політика конфіденційності</a>
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn navbar-toggler-icon" id="sidebarToggle"></button>
+                    <span class="navbar-brand mb-0 h1">Допомога з оплатою</span>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div class="container-fluid">
+                <div class="lang-switch" style="margin: 16px 0;"><a href="../payments_problem.html#ru">Русский</a> · <a href="../payments_problem.html#en">English</a> · <a href="../es/payments_problem.html">Español</a> · <a href="../de/payments_problem.html">Deutsch</a> · <a href="../pt/payments_problem.html">Português</a> · <a href="../fr/payments_problem.html">Français</a> · <a href="../it/payments_problem.html">Italiano</a> · <a href="../pl/payments_problem.html">Polski</a> · <a href="../tr/payments_problem.html">Türkçe</a> · <a href="../kk/payments_problem.html">Қазақша</a> · <a href="../uz/payments_problem.html">Oʻzbekcha</a> · <b>Українська</b></div>
+                <div class="help-section">
+                    <h2>Допомога з оплатою та підпискою PRO</h2>
+                    <p>Тут ви знайдете відповіді на часті запитання: що робити, якщо підписка не відновлюється після
+                        зміни телефона, і як перенести дані на інший пристрій.</p>
+                    <p class="mb-0"><a href="#restore">Підписка не відновлюється</a> ·
+                        <a href="#transfer">Перенесення даних</a> ·
+                        <a href="#subscribe">Користувачам у Росії</a></p>
+                </div>
+
+                <div class="card" id="restore">
+                    <div class="card-header">Підписка не відновлюється (новий телефон або перевстановлення)</div>
+                    <div class="card-body">
+                        <p>Застосунок поширюється у двох версіях: з Google Play і з RuStore. Це окремі застосунки, а підписка
+                            діє лише в тій версії, де її оформлено. Перенести підписку з однієї версії в іншу не можна.</p>
+                        <p><b>Якщо підписку оформлено в одній версії застосунку, продовжуйте користуватися саме нею.</b>
+                            На новому телефоні:</p>
+                        <ol>
+                            <li>Установіть ту саму версію застосунку з того самого магазину.</li>
+                            <li>Увійдіть в акаунт магазину, через який оплачували підписку (акаунт Google або RuStore).</li>
+                            <li>Відкрийте Налаштування → «PRO і покупки» й натисніть «Відновити покупки».</li>
+                        </ol>
+                        <div class="note">
+                            <p>Як дізнатися версію: Налаштування → «Про застосунок». Поруч із номером версії вказано
+                                магазин — «Google Play» або «RuStore».</p>
+                        </div>
+                        <p>Якщо ви вже встановили іншу версію, перенесіть дані в потрібну за допомогою резервної копії
+                            (див. <a href="#transfer">нижче</a>), а зайву версію видаліть.</p>
+                        <p class="mb-0">Функції, куплені до появи підписки (разові покупки), так само працюють лише у
+                            версії застосунку, де їх куплено.</p>
+                    </div>
+                </div>
+
+                <div class="card" id="transfer">
+                    <div class="card-header">Перенесення даних між телефонами та версіями застосунку</div>
+                    <div class="card-body">
+                        <h5>Створення резервної копії:</h5>
+                        <ol>
+                            <li>Відкрийте застосунок</li>
+                            <li>Перейдіть у Налаштування → Резервне копіювання</li>
+                            <li>Виберіть «Зберегти у файл» (або ввімкніть автоматичне копіювання на Google Диск /
+                                Яндекс Диск)</li>
+                            <li>Збережіть файл у зручне місце</li>
+                        </ol>
+
+                        <h5>Відновлення даних:</h5>
+                        <ol class="mb-0">
+                            <li>Установіть застосунок на новий телефон</li>
+                            <li>Перейдіть у Налаштування → Резервне копіювання</li>
+                            <li>Виберіть «Відновити з файлу» й знайдіть збережений файл</li>
+                            <li>Підтвердьте відновлення</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">Основні перевірки</div>
+                    <div class="card-body">
+                        <ul class="mb-0">
+                            <li>Стабільне з’єднання з інтернетом (під час оплати й перевірки підписки краще вимкнути VPN)</li>
+                            <li>Достатньо коштів на картці або рахунку</li>
+                            <li>Актуальна версія застосунку</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card" id="subscribe">
+                    <div class="card-header">Користувачам у Росії: як оформити підписку, якщо оплата через Google Play не проходить</div>
+                    <div class="card-body">
+                        <p>Користувачі в Росії можуть оформити підписку через RuStore просто в поточній версії — без
+                            перевстановлення й перенесення даних.</p>
+                        <ol>
+                            <li>Установіть застосунок RuStore з офіційного джерела.</li>
+                            <li>Відкрийте RuStore та увійдіть в акаунт.</li>
+                            <li>Оновіть «Моя зарплата» до версії 2.2.0 або новішої.</li>
+                            <li>Відкрийте «Моя зарплата», натисніть корону вгорі екрана й виберіть тариф: оплата пройде
+                                через RuStore.</li>
+                        </ol>
+                        <div class="note">
+                            <p>Якщо кнопки оплати не видно, перевірте, що ви ввійшли в RuStore, і натисніть
+                                «Спробувати ще раз» у вікні підписки.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">Потрібна інша допомога?</div>
+                    <div class="card-body">
+                        <p>Якщо проблема залишилася, напишіть мені:</p>
+                        <p class="mb-0">Пошта: <a href="mailto:tadiuzzz@gmail.com">tadiuzzz@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../../../js/scripts.js"></script>
+</body>
+
+</html>
