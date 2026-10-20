@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="kk">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Менің жалақым қолданбасында жазылымды рәсімдеу және қалпына келтіру бойынша көмек" />
+    <meta name="author" content="tadiuzzz" />
+    <title>Төлем бойынша көмек - «Менің жалақым» қолданбасы</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon_mysalary.ico" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../../../css/styles.css" rel="stylesheet" />
+    <style>
+        .card {
+            margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            scroll-margin-top: 16px;
+        }
+        .card-header {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+        .help-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .note p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+    <link rel="alternate" hreflang="ru" href="https://tadius.github.io/projects/mysalary/payments_problem.html" />
+    <link rel="alternate" hreflang="es" href="https://tadius.github.io/projects/mysalary/es/payments_problem.html" />
+    <link rel="alternate" hreflang="de" href="https://tadius.github.io/projects/mysalary/de/payments_problem.html" />
+    <link rel="alternate" hreflang="pt" href="https://tadius.github.io/projects/mysalary/pt/payments_problem.html" />
+    <link rel="alternate" hreflang="fr" href="https://tadius.github.io/projects/mysalary/fr/payments_problem.html" />
+    <link rel="alternate" hreflang="it" href="https://tadius.github.io/projects/mysalary/it/payments_problem.html" />
+    <link rel="alternate" hreflang="pl" href="https://tadius.github.io/projects/mysalary/pl/payments_problem.html" />
+    <link rel="alternate" hreflang="tr" href="https://tadius.github.io/projects/mysalary/tr/payments_problem.html" />
+    <link rel="alternate" hreflang="kk" href="https://tadius.github.io/projects/mysalary/kk/payments_problem.html" />
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">
+                <img class="img-thumbnail" src="../img/my_salary.png" height="40" width="40" />
+                <span style="padding-left: 10px;">Менің жалақым</span>
+            </div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../../../index.html">Барлық жобалар</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="about_app.html">Қолданба туралы</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="payments_problem.html"><b>Төлем бойынша көмек</b></a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="terms.html">Жазылым шарттары</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="privacy_policy.html">Құпиялылық саясаты</a>
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn navbar-toggler-icon" id="sidebarToggle"></button>
+                    <span class="navbar-brand mb-0 h1">Төлем бойынша көмек</span>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div class="container-fluid">
+                <div class="lang-switch" style="margin: 16px 0;"><a href="../payments_problem.html#ru">Русский</a> · <a href="../payments_problem.html#en">English</a> · <a href="../es/payments_problem.html">Español</a> · <a href="../de/payments_problem.html">Deutsch</a> · <a href="../pt/payments_problem.html">Português</a> · <a href="../fr/payments_problem.html">Français</a> · <a href="../it/payments_problem.html">Italiano</a> · <a href="../pl/payments_problem.html">Polski</a> · <a href="../tr/payments_problem.html">Türkçe</a> · <b>Қазақша</b></div>
+                <div class="help-section">
+                    <h2>Төлем және PRO жазылымы бойынша көмек</h2>
+                    <p>Мұнда жиі қойылатын сұрақтарға жауап табасыз: телефонды ауыстырғаннан кейін жазылым қалпына
+                        келмесе, не істеу керек және деректерді басқа құрылғыға қалай көшіру керек.</p>
+                    <p class="mb-0"><a href="#restore">Жазылым қалпына келмейді</a> ·
+                        <a href="#transfer">Деректерді көшіру</a> ·
+                        <a href="#subscribe">Ресейдегі пайдаланушылар</a></p>
+                </div>
+
+                <div class="card" id="restore">
+                    <div class="card-header">Жазылым қалпына келмейді (жаңа телефон немесе қайта орнату)</div>
+                    <div class="card-body">
+                        <p>Қолданба екі нұсқада таратылады: Google Play нұсқасы және RuStore нұсқасы. Бұлар бөлек
+                            қолданбалар, ал жазылым тек өзі рәсімделген нұсқада жұмыс істейді. Бір нұсқадағы жазылымды
+                            екіншісіне көшіру мүмкін емес.</p>
+                        <p><b>Жазылымды қолданбаның бір нұсқасында рәсімдеген болсаңыз, сол нұсқаны пайдалана беріңіз.</b>
+                            Жаңа телефонда:</p>
+                        <ol>
+                            <li>Қолданбаның сол нұсқасын бұрынғы дүкеннен орнатыңыз.</li>
+                            <li>Жазылымға төлем жасаған дүкен аккаунтымен кіріңіз (Google аккаунты немесе RuStore
+                                аккаунты).</li>
+                            <li>Баптаулар → «PRO және сатып алулар» бөлімін ашып, «Сатып алуларды қалпына келтіру»
+                                түймесін басыңыз.</li>
+                        </ol>
+                        <div class="note">
+                            <p>Нұсқаны білу үшін Баптаулар → «Қолданба туралы» бөлімін ашыңыз: нұсқа нөмірінің
+                                жанында дүкен көрсетілген — «Google Play» немесе «RuStore».</p>
+                        </div>
+                        <p>Екінші нұсқаны орнатып қойған болсаңыз, деректерді сақтық көшірме арқылы дұрыс нұсқаға
+                            көшіріңіз (<a href="#transfer">төменде</a> қараңыз), ал артық нұсқаны жойыңыз.</p>
+                        <p class="mb-0">Жазылымға дейін сатып алынған функциялар (бір реттік сатып алулар) да тек өздері
+                            сатып алынған қолданба нұсқасында жұмыс істейді.</p>
+                    </div>
+                </div>
+
+                <div class="card" id="transfer">
+                    <div class="card-header">Деректерді телефондар мен қолданба нұсқалары арасында көшіру</div>
+                    <div class="card-body">
+                        <h5>Сақтық көшірме жасау:</h5>
+                        <ol>
+                            <li>Қолданбаны ашыңыз</li>
+                            <li>Баптаулар → Сақтық көшірме бөліміне өтіңіз</li>
+                            <li>«Файлға сақтау» тармағын таңдаңыз (немесе Google Drive / Яндекс Дискке автоматты
+                                көшірмені қосыңыз)</li>
+                            <li>Файлды ыңғайлы жерге сақтаңыз</li>
+                        </ol>
+
+                        <h5>Деректерді қалпына келтіру:</h5>
+                        <ol class="mb-0">
+                            <li>Қолданбаны жаңа телефонға орнатыңыз</li>
+                            <li>Баптаулар → Сақтық көшірме бөліміне өтіңіз</li>
+                            <li>«Файлдан қалпына келтіру» тармағын таңдап, сақталған файлды табыңыз</li>
+                            <li>Қалпына келтіруді растаңыз</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">Негізгі тексерулер</div>
+                    <div class="card-body">
+                        <ul class="mb-0">
+                            <li>Тұрақты интернет байланысы (төлем және жазылымды тексеру кезінде VPN-ді өшірген дұрыс)</li>
+                            <li>Картада немесе шотта жеткілікті қаражат</li>
+                            <li>Қолданбаның соңғы нұсқасы</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card" id="subscribe">
+                    <div class="card-header">Ресейдегі пайдаланушылар: Google Play арқылы төлем өтпесе, қалай жазылуға болады</div>
+                    <div class="card-body">
+                        <p>Ресейдегі пайдаланушылар қолданбаны қайта орнатпай және деректерді көшірмей-ақ, қазіргі нұсқада
+                            RuStore арқылы жазыла алады.</p>
+                        <ol>
+                            <li>RuStore қолданбасын ресми көзден орнатыңыз.</li>
+                            <li>RuStore-ды ашып, аккаунтыңызға кіріңіз.</li>
+                            <li>«Менің жалақым» қолданбасын 2.2.0 немесе одан жаңа нұсқаға дейін жаңартыңыз.</li>
+                            <li>«Менің жалақым» қолданбасын ашып, экранның жоғарғы жағындағы тәжді басыңыз да, тарифті
+                                таңдаңыз: төлем RuStore арқылы өтеді.</li>
+                        </ol>
+                        <div class="note">
+                            <p>Төлем түймесі көрінбесе, RuStore-ға кіргеніңізді тексеріп, жазылым терезесіндегі
+                                «Қайталап көру» түймесін басыңыз.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">Басқа көмек керек пе?</div>
+                    <div class="card-body">
+                        <p>Мәселе әлі де шешілмесе, маған жазыңыз:</p>
+                        <p class="mb-0">Пошта: <a href="mailto:tadiuzzz@gmail.com">tadiuzzz@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../../../js/scripts.js"></script>
+</body>
+
+</html>
