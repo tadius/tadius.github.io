@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Help with MySalary PRO subscription payments and restore" />
+    <meta name="author" content="tadiuzzz" />
+    <title>Payment help - MySalary</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon_mysalary.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../../../css/styles.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            scroll-margin-top: 16px;
+        }
+        .card-header {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+        .help-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .note p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+    <link rel="alternate" hreflang="ru" href="https://tadius.github.io/projects/mysalary/ru/payments_problem.html" />
+    <link rel="alternate" hreflang="en" href="https://tadius.github.io/projects/mysalary/en/payments_problem.html" />
+    <link rel="alternate" hreflang="es" href="https://tadius.github.io/projects/mysalary/es/payments_problem.html" />
+    <link rel="alternate" hreflang="de" href="https://tadius.github.io/projects/mysalary/de/payments_problem.html" />
+    <link rel="alternate" hreflang="pt" href="https://tadius.github.io/projects/mysalary/pt/payments_problem.html" />
+    <link rel="alternate" hreflang="fr" href="https://tadius.github.io/projects/mysalary/fr/payments_problem.html" />
+    <link rel="alternate" hreflang="it" href="https://tadius.github.io/projects/mysalary/it/payments_problem.html" />
+    <link rel="alternate" hreflang="pl" href="https://tadius.github.io/projects/mysalary/pl/payments_problem.html" />
+    <link rel="alternate" hreflang="tr" href="https://tadius.github.io/projects/mysalary/tr/payments_problem.html" />
+    <link rel="alternate" hreflang="kk" href="https://tadius.github.io/projects/mysalary/kk/payments_problem.html" />
+    <link rel="alternate" hreflang="uz" href="https://tadius.github.io/projects/mysalary/uz/payments_problem.html" />
+    <link rel="alternate" hreflang="uk" href="https://tadius.github.io/projects/mysalary/uk/payments_problem.html" />
+    <link rel="alternate" hreflang="x-default" href="https://tadius.github.io/projects/mysalary/ru/payments_problem.html" />
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light"><img class="img-thumbnail" src="../img/my_salary.png"
+                    height="40" width="40" /><span style="padding-left: 10px;">MySalary</span></div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../../../index.html">All projects</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="about_app.html">About app</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="payments_problem.html"><b>Payment help</b></a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="terms.html">Subscription terms</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="privacy_policy.html">Privacy Policy</a>
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn navbar-toggler-icon" id="sidebarToggle"></button>
+                    <span class="navbar-brand mb-0 h1">Payment help</span>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div class="container-fluid">
+                <div class="lang-switch" style="margin: 16px 0;"><a href="../ru/payments_problem.html">Русский</a> · <b>English</b> · <a href="../es/payments_problem.html">Español</a> · <a href="../de/payments_problem.html">Deutsch</a> · <a href="../pt/payments_problem.html">Português</a> · <a href="../fr/payments_problem.html">Français</a> · <a href="../it/payments_problem.html">Italiano</a> · <a href="../pl/payments_problem.html">Polski</a> · <a href="../tr/payments_problem.html">Türkçe</a> · <a href="../kk/payments_problem.html">Қазақша</a> · <a href="../uz/payments_problem.html">Oʻzbekcha</a> · <a href="../uk/payments_problem.html">Українська</a></div>
+                <div class="help-section mt-4">
+                    <h2>Payment and PRO subscription help</h2>
+                    <p>Here are answers to common questions: how to subscribe if the payment does not go through,
+                        and what to do if the subscription was not restored after changing phones.</p>
+                    <p class="mb-0"><a href="#subscribe">How to subscribe</a> ·
+                        <a href="#restore">Subscription is not restored</a> ·
+                        <a href="#transfer">Moving your data</a></p>
+                </div>
+
+                <div class="card" id="subscribe">
+                    <div class="card-header">How to subscribe if Google Play payment fails</div>
+                    <div class="card-body">
+                        <p>Users in Russia can subscribe via RuStore right in the current version of the app —
+                            there is no need to reinstall the app or move your data.</p>
+                        <ol>
+                            <li>Install the RuStore app from the official source.</li>
+                            <li>Open RuStore and sign in to your account.</li>
+                            <li>Update MySalary to version 2.2.0 or later.</li>
+                            <li>Open MySalary, tap the crown at the top of the screen and choose a plan — the payment
+                                will go through RuStore.</li>
+                        </ol>
+                        <div class="note">
+                            <p>If the payment button does not appear, make sure you are signed in to your RuStore
+                                account and tap "Try again" in the subscription window.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="restore">
+                    <div class="card-header">Subscription is not restored (new phone or reinstall)</div>
+                    <div class="card-body">
+                        <p>The app is distributed in two versions — from Google Play and from RuStore. They are
+                            separate apps, and a subscription works only in the version where it was bought.
+                            It cannot be moved to the other version.</p>
+                        <p><b>If you subscribed in one version, keep using that version.</b> On a new phone:</p>
+                        <ol>
+                            <li>Install the same version of the app from the same store as before.</li>
+                            <li>Sign in to the same store account you used to pay for the subscription
+                                (a Google account or a RuStore account).</li>
+                            <li>If you paid via RuStore, install RuStore and sign in to your account.</li>
+                            <li>Open Settings → "PRO and purchases" and tap "Restore purchases".</li>
+                        </ol>
+                        <div class="note">
+                            <p>To check your app version, open Settings → "About app". The store name — "Google Play"
+                                or "RuStore" — is shown next to the version number.</p>
+                        </div>
+                        <p>If you have already installed the other version, move your data to the required version
+                            with a backup (see <a href="#transfer">below</a>) and uninstall the extra version.</p>
+                        <p class="mb-0">Features purchased before the subscription (one-time purchases) also work only
+                            in the app version where they were bought.</p>
+                    </div>
+                </div>
+
+                <div class="card" id="transfer">
+                    <div class="card-header">Moving data between phones and app versions</div>
+                    <div class="card-body">
+                        <h5>Creating a backup:</h5>
+                        <ol>
+                            <li>Open the app</li>
+                            <li>Go to Settings → Backup and restore</li>
+                            <li>Choose "Create backup" (or enable auto backup to Google Drive / Yandex Disk)</li>
+                            <li>Save the file somewhere convenient</li>
+                        </ol>
+
+                        <h5>Restoring data:</h5>
+                        <ol class="mb-0">
+                            <li>Install the app on the new phone</li>
+                            <li>Go to Settings → Backup and restore</li>
+                            <li>Choose "Restore from backup" and find the saved file</li>
+                            <li>Confirm the data restore</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">Check the basics</div>
+                    <div class="card-body">
+                        <ul class="mb-0">
+                            <li>Stable internet connection (it is better to turn off VPN while paying and checking the subscription)</li>
+                            <li>Sufficient balance on the card or account</li>
+                            <li>An up-to-date version of the app</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">Need more help?</div>
+                    <div class="card-body">
+                        <p>If you still have questions, write to me:</p>
+                        <p class="mb-0">Email: <a href="mailto:tadiuzzz@gmail.com">tadiuzzz@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../../../js/scripts.js"></script>
+</body>
+
+</html>
